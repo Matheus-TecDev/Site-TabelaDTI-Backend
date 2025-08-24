@@ -1,4 +1,7 @@
 🧩 DTI Back
+
+---
+
 📖 Descrição
 
 O DTI Back é a API que sustenta a padronização de dados de veículos para o projeto DTI.
