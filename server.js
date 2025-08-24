@@ -6,7 +6,12 @@ const pool = require("./db"); // importa o pool de conexões
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-app.use(cors());
+// 🟢 Habilitar CORS para aceitar qualquer origem
+app.use(cors({
+  origin: "*", // Pode restringir depois pro seu frontend (ex: 'https://meusite.com')
+  methods: ["GET", "POST"],
+}));
+
 app.use(express.json());
 
 // 🟢 Rota de boas-vindas (resolve o "Cannot GET /")
@@ -37,6 +42,7 @@ app.get("/aquisicoes", (req, res) => {
     LEFT JOIN TRANSACAO T3 ON T1.CD_TRANSACAO = T3.CD_TRANSACAO
     LEFT JOIN LOCAL T4 ON T1.CD_LOCAL = T4.CD_LOCAL
     WHERE T1.TP_SITUACAO IN (1, 7, 8) 
+    AND T3.TP_CONSFUNC = 0 
     ORDER BY T2.NM_MODELO;
   `;
 
@@ -51,5 +57,5 @@ app.get("/aquisicoes", (req, res) => {
 
 // 🚀 Inicia o servidor
 app.listen(PORT, () => {
-  console.log(`✅ Servidor rodando em http://localhost:${PORT}`);
+  console.log(`✅ Servidor rodando na porta ${PORT}`);
 });
