@@ -85,8 +85,11 @@ http://localhost:3000
 ## 📌 Roadmap (versões futuras)
 
 🔄 Migrar de JavaScript → TypeScript.
+
 📑 Adicionar documentação com Swagger.
+
 🧪 Criar testes unitários (Jest).
+
 ⚡ Implementar CI/CD para deploy automatizado.
 
 ---
