@@ -1,8 +1,5 @@
-🧩 DTI Back
-
----
-
-📖 Descrição
+## 🗃️ DTI Backend
+## 📖 Descrição
 
 O DTI Back é a API que sustenta a padronização de dados de veículos para o projeto DTI.
 Projeto freelance desenvolvido em parceria com meu sócio, utilizando o CNPJ da empresa DTI.
@@ -12,7 +9,7 @@ Atualmente está em Node.js com JavaScript, garantindo agilidade no desenvolvime
 
 ---
 
-⚡ Funcionalidades
+## ⚡ Funcionalidades
 
 Endpoints REST para manipulação de dados de veículos.
 
@@ -24,7 +21,7 @@ Estrutura já preparada para futuras evoluções em TypeScript.
 
 ---
 
-📚 Conceitos praticados
+## 📚 Conceitos praticados
 
 Criação e consumo de APIs REST com Express.
 
@@ -36,7 +33,7 @@ Boas práticas em backend moderno.
 
 ---
 
-🛠️ Tecnologias
+## 🛠️ Tecnologias
 
 Node.js
 
@@ -50,11 +47,11 @@ Nodemon
 
 ---
 
-🚀 Como usar
+## 🚀 Como usar
 
 Clone o repositório:
 
-	git clone https://github.com/Matheus-TecDev/DTI-Back.git
+	git clone https://github.com/Matheus-TecDev/Site-TabelaDTI-Backend.git
 
 
 Acesse a pasta do projeto:
@@ -77,17 +74,16 @@ http://localhost:3000
 
 ---
 
-📌 Roadmap (versões futuras)
+## 📌 Roadmap (versões futuras)
 
 🔄 Migrar de JavaScript → TypeScript.
-
 📑 Adicionar documentação com Swagger.
-
+🧪 Criar testes unitários (Jest).
 ⚡ Implementar CI/CD para deploy automatizado.
 
 ---
 
-👨‍💻 Autores
+## 👨‍💻 Autores
 
 - [Matheus Freire](https://github.com/Matheus-TecDev)  
 - [LinkedIn](https://www.linkedin.com/in/matheus-freire-martins-da-costa-318622376/) 
